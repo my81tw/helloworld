@@ -1,8 +1,9 @@
+#!/usr/bin/python3
 import requests
 import re
 from bs4 import BeautifulSoup
 import datetime
-import pymongo
+# import pymongo
 
 def extract_url(url):
 
