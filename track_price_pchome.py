@@ -106,7 +106,9 @@ def get_prod_detail(url):
         # for i in jj["prods"]:
         #     print(i["name"], i["price"])
 
-headers = { "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"}
-details = {"name": "", "price": 0, "deal": True, "url": ""}
-# get_query_result("https://ecshweb.pchome.com.tw/search/v3.3/all/results?q=ssd&page=1&sort=sale/dc")
-get_prod_detail("https://24h.pchome.com.tw/ecapi/ecshop/prodapi/v2/prod/DRAH6C-A9008F563-000&fields=Seq,Id,Name,Nick,Store,PreOrdDate,SpeOrdDate,Price,Discount,Pic,Weight,ISBN,Qty,Bonus,isBig,isSpec,isCombine,isDiy,isRecyclable,isCarrier,isMedical,isBigCart,isSnapUp,isDescAndIntroSync,isFoodContents,isHuge,isEnergySubsidy,isPrimeOnly,isPreOrder24h,isWarranty,isLegalStore,isFresh,isBidding,isSet,Volume,isArrival24h&_callback=jsonp_prod&1574058600?_callback=jsonp_prod")
+if __name__ == "__main__":
+    import sys
+    headers = { "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"}
+    details = {"name": "", "price": 0, "deal": True, "url": ""}
+    # get_query_result("https://ecshweb.pchome.com.tw/search/v3.3/all/results?q=ssd&page=1&sort=sale/dc")
+    get_prod_detail("https://24h.pchome.com.tw/ecapi/ecshop/prodapi/v2/prod/DRAH6C-A9008F563-000&fields=Seq,Id,Name,Nick,Store,PreOrdDate,SpeOrdDate,Price,Discount,Pic,Weight,ISBN,Qty,Bonus,isBig,isSpec,isCombine,isDiy,isRecyclable,isCarrier,isMedical,isBigCart,isSnapUp,isDescAndIntroSync,isFoodContents,isHuge,isEnergySubsidy,isPrimeOnly,isPreOrder24h,isWarranty,isLegalStore,isFresh,isBidding,isSet,Volume,isArrival24h&_callback=jsonp_prod&1574058600?_callback=jsonp_prod")
